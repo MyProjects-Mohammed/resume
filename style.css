@@ -1,0 +1,464 @@
+/* style.css */
+body {
+    font-family: 'Open Sans', sans-serif; /* Professional, readable font */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Very light grey background, almost white */
+    color: #333; /* Dark grey main text */
+    line-height: 1.65; /* Slightly increased line height for readability */
+}
+
+.container {
+    width: 88%; /* Slightly wider container for a more substantial feel */
+    max-width: 1200px; /* Maximum width to maintain readability on very large screens */
+    margin: 2em auto;
+}
+
+header {
+    background: #34495e; /* Deep grey header - authoritative */
+    color: #fff;
+    padding: 2.8em 0; /* Further increased header padding for prominence */
+    margin-bottom: 2.5em; /* Increased margin below header to separate content blocks */
+    border-radius: 10px; /* Slightly more rounded header corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.18); /* Slightly stronger header shadow */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em; /* Increased horizontal padding for header content */
+}
+
+.profile-block {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 140px; /* Even larger profile image for stronger presence */
+    height: 140px;
+    border-radius: 50%;
+    margin-right: 2.5em; /* Further increased spacing from image */
+    border: 6px solid #fff; /* Thicker white border */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.25); /* More defined image shadow */
+}
+
+.profile-text h1 {
+    font-size: 3.0em; /* Even larger name for impact */
+    margin: 0 0 0.15em 0;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -0.02em; /* Slight letter spacing adjustment */
+}
+
+.profile-text p {
+    font-size: 1.4em; /* More substantial subtitle */
+    margin: 0;
+    color: #ddd;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.95; /* Slightly less transparent subtitle */
+}
+
+.contact-block {
+    text-align: right;
+}
+
+.contact-block p {
+    margin: 0.7em 0; /* Increased spacing in contact info */
+    font-size: 1.1em;
+    color: #eee; /* Even lighter contact text */
+}
+
+.contact-detail {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.contact-block a:hover .contact-detail {
+    color: #ccc; /* Slightly lighter hover color */
+}
+
+main.main-content {
+    display: flex; /* Changed to flexbox for vertical stacking */
+    flex-direction: column; /* Stack sections vertically */
+    gap: 2.5em; /* Increased gap between sections */
+    padding: 2.5em; /* Increased padding around main content */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.18); /* Slightly stronger main content shadow */
+}
+
+.block-section {
+    padding: 2.5em; /* Further increased padding within blocks */
+    border-radius: 10px; /* More rounded block corners */
+    background: #fff; /* Maintained white blocks */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06); /* Even softer block shadow */
+    border: 1px solid #e0e0e0; /* Added a subtle border to blocks */
+    transition: box-shadow 0.2s ease-in-out; /* Smoother shadow transition */
+}
+
+.block-section:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1); /* More subtle hover shadow */
+    background-color: #f9f9f9; /* Very light grey on hover for subtle feedback */
+}
+
+.block-title {
+    color: #2c3e50; /* Darker title color */
+    font-size: 1.9em; /* Further increased title size */
+    margin-top: 0;
+    margin-bottom: 1.5em; /* Increased bottom margin for titles */
+    padding-bottom: 0.7em;
+    border-bottom: 2px solid #999; /* More prominent border for titles */
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    text-transform: uppercase; /* Uppercase section titles for authority */
+    opacity: 0.9; /* Slightly less opaque title text */
+}
+
+.block-title i {
+    margin-right: 0.7em;
+    font-size: 1.1em; /* Slightly larger title icons */
+    color: #666; /* Icon color further toned down */
+    opacity: 0.8; /* Slightly less opaque icons */
+}
+
+.block-content p, .block-content ul, .block-content .competencies-grid {
+    color: #444;
+    font-size: 1.1em; /* Slightly larger content text */
+    line-height: 1.7; /* Increased line height for content */
+}
+
+.block-content p {
+    margin-bottom: 1.2em; /* Spacing below paragraphs */
+}
+
+.block-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.block-content ul li {
+    padding: 0.6em 0; /* Further increased list item padding */
+    border-bottom: 1px dotted #ddd;
+    display: flex;
+    align-items: flex-start;
+}
+
+.block-content ul li:last-child {
+    border-bottom: none;
+}
+
+.block-content ul li i {
+    margin-right: 0.8em; /* Further increased spacing for list icons */
+    color: #777;
+    font-size: 1em; /* Slightly larger list icons */
+    margin-top: 0.2em;
+    opacity: 0.8; /* Slightly less opaque icons */
+}
+
+.block-content strong {
+    font-weight: 700; /* Stronger emphasis weight */
+    color: #222; /* Even darker emphasis text */
+}
+
+.experience-item {
+    margin-bottom: 1.5em; /* Further increased spacing between experience items */
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Faster transitions */
+    padding: 1.5em; /* Further increased padding in experience items */
+    border-radius: 8px;
+    border: 1px solid #e0e0e0; /* Added border to experience items */
+    background-color: #fff; /* Ensure white background */
+}
+
+.experience-item:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* Subtle shadow on hover */
+}
+
+.experience-item h3 {
+    color: #2c3e50;
+    margin-bottom: 0.6em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3em; /* Further increased experience titles */
+    font-weight: 600; /* Slightly bolder experience titles */
+}
+
+.experience-item .project-icon {
+    font-size: 1.1em; /* Slightly larger project icons */
+    color: #777;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out; /* Faster icon transition */
+}
+
+.experience-item:hover .project-icon {
+    opacity: 0.6; /* Even less prominent hover icon */
+}
+
+
+.experience-item .company {
+    font-style: italic;
+    color: #555; /* Darker company name color */
+    margin-bottom: 1.2em; /* Increased spacing below company name */
+    font-size: 1.05em;
+}
+
+.education-item h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5em;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.education-item .university {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1.3em; /* Increased spacing below university name */
+    font-size: 1.05em;
+}
+
+.competencies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Wider competency columns */
+    gap: 2em; /* Increased gap in competency grid */
+}
+
+.competencies-grid ul {
+    padding: 0;
+}
+
+.competencies-grid ul li {
+    border-bottom: none;
+    padding: 0.5em 0;
+    font-size: 1.05em;
+    display: flex; /* Align checkmark icons nicely */
+    align-items: center;
+}
+
+.competencies-grid ul li i {
+    margin-right: 0.6em;
+    font-size: 0.9em;
+    color: #777;
+    opacity: 0.8;
+}
+
+
+/* Portfolio Items - Interactive */
+.portfolio-item {
+    margin-bottom: 1.2em; /* Increased spacing below portfolio items */
+    padding: 1.2em 1.5em; /* Further increased padding in portfolio items */
+    border-radius: 8px;
+    background: #f9f9f9; /* Lighter portfolio item background */
+    border: 1px solid #ddd; /* More subtle border */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.15s ease-in-out, transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Faster transitions */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Very subtle base shadow */
+}
+
+.portfolio-item:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.01);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* Slightly more defined hover shadow */
+}
+
+.portfolio-item .portfolio-icon {
+    margin-right: 0.7em;
+    color: #777;
+    font-size: 1em;
+    opacity: 0.8; /* Slightly less opaque icons */
+}
+
+.portfolio-item .project-icon {
+    font-size: 1.1em;
+    color: #777;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.portfolio-item:hover .project-icon {
+    opacity: 0.6;
+}
+
+
+/* Modal for Project Images */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8); /* Darker modal backdrop */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 6% auto; /* Further adjusted modal position */
+    padding: 30px; /* Increased modal padding */
+    border: 1px solid #aaa; /* Slightly darker modal border */
+    width: 70%; /* Slightly narrower modal */
+    border-radius: 12px; /* More rounded modal corners */
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3); /* More defined modal shadow */
+}
+
+.close-button {
+    color: #ccc; /* Even lighter close button */
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 32px; /* Larger close button */
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.8; /* Slightly less opaque close button */
+    transition: opacity 0.2s ease-in-out;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #999; /* Darker hover color for close button */
+    text-decoration: none;
+    opacity: 1; /* Fully opaque on hover */
+}
+
+#project-image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Further increased gap in image gallery */
+    max-height: 80vh; /* Slightly taller gallery */
+    overflow-y: auto;
+    padding: 15px; /* Increased padding inside gallery */
+}
+
+#project-image-gallery img {
+    max-width: 350px; /* Slightly larger images in gallery */
+    max-height: 250px;
+    border-radius: 10px; /* More rounded image corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25); /* More defined image shadow */
+    transition: transform 0.25s ease-in-out;
+}
+
+#project-image-gallery img:hover {
+    transform: scale(1.03); /* Subtler zoom on image hover */
+    opacity: 0.95; /* Slightly less opaque on hover */
+}
+
+
+footer {
+    background: #2c3e50; /* Even darker footer */
+    color: #ddd;
+    text-align: center;
+    padding: 2em 0; /* Increased footer padding */
+    border-radius: 8px;
+    font-size: 1em; /* Slightly larger footer font */
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    margin-top: 3em; /* Increased margin above footer to push it down */
+    opacity: 0.9; /* Slightly less opaque footer text */
+}
+
+
+/* Responsive Design */
+@media(max-width: 768px) {
+    .container {
+        width: 96%; /* Slightly wider container on small screens */
+        margin: 1.8em auto;
+    }
+
+    header {
+        padding: 2em 0; /* Adjusted header padding for small screens */
+        border-radius: 8px;
+        margin-bottom: 2em;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 2em; /* Adjusted header content padding */
+    }
+
+    .profile-block {
+        flex-direction: column;
+        margin-bottom: 1.8em;
+    }
+
+    .profile-img {
+        margin-right: 0;
+        margin-bottom: 1.8em;
+        width: 130px; /* Adjusted profile image size for small screens */
+        height: 130px;
+    }
+
+    .profile-text h1 {
+        font-size: 2.5em; /* Adjusted name size for small screens */
+    }
+
+    .profile-text p {
+        font-size: 1.2em; /* Adjusted subtitle size for small screens */
+    }
+
+    .contact-block {
+        text-align: center;
+    }
+
+    main.main-content {
+        grid-template-columns: 1fr; /* Stack blocks on small screens */
+        padding: 2em; /* Adjusted main content padding */
+        gap: 2em;
+        border-radius: 8px;
+    }
+
+    .block-section {
+        padding: 2.2em; /* Adjusted block padding for small screens */
+        border-radius: 8px;
+    }
+
+    .block-title {
+        font-size: 1.6em; /* Adjusted block title size for small screens */
+        margin-bottom: 1.3em;
+    }
+
+    .experience-item {
+        padding: 1.4em; /* Adjusted experience item padding for small screens */
+        margin-bottom: 1.3em;
+        border-radius: 7px;
+    }
+
+    .portfolio-item {
+        padding: 1.1em; /* Adjusted portfolio item padding for small screens */
+        margin-bottom: 1em;
+        border-radius: 7px;
+    }
+
+    .modal-content {
+        margin: 4% auto; /* Further adjusted modal position for smaller screens */
+        padding: 25px;
+        border-radius: 10px;
+    }
+
+    #project-image-gallery img {
+        max-width: 280px; /* Adjusted image size in gallery for small screens */
+        max-height: 200px;
+        border-radius: 7px;
+    }
+
+    footer {
+        padding: 1.8em 0; /* Adjusted footer padding for small screens */
+        border-radius: 8px;
+        margin-top: 2.5em;
+        font-size: 0.95em;
+    }
+}
